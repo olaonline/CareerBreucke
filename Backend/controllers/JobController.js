@@ -11,7 +11,18 @@ const job_index = async (req, res) => {
 };
 
 // get a single job
-const job_details = async (req, res) => {};
+const job_details = async (req, res) => {
+  const _id = req.body._id;
+  try {
+    const Job = await JobModel.findById(_id);
+    if(!Job){
+      res.status(404).send({msg: "Job not found"})
+    }
+    res.status(200).send(Job);
+  } catch (err) {
+    res.status(500).send({ msg: err.message });
+  }
+};
 
 // send back the form
 const job_create_get = async (req, res) => {};
