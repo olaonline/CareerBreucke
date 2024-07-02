@@ -1,9 +1,9 @@
-import '../App.css';
+import "../App.css";
 
 function Footer() {
   return (
     <div className="Footer">
-        <p>Footer</p>
+      <p>©2024 CareerBrücke. All rights reserved</p>
     </div>
   );
 }

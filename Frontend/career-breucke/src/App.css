@@ -1,6 +1,6 @@
 /* Basic Reset */
 * {
-  margin: auto 0 ;
+  margin: auto 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -9,22 +9,22 @@
   text-align: center;
 }
 /* Header */
-.Header{
+.Header {
   padding: 1rem 3rem;
-  background-color: #CED7E4;
+  background-color: #ced7e4;
 }
 .Header img {
   width: 15rem;
   pointer-events: none;
 }
 
-.Header nav{
+.Header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.Header ul{
+.Header ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -37,33 +37,33 @@
   margin-left: 2rem;
 }
 
-.Header a{
+.Header a {
   text-decoration: none;
   color: inherit;
 }
 
-.Header li.active{
-  color: #0F62FE;
+.Header li.active {
+  color: #0f62fe;
 }
-.Header li :hover{
-  color: #0F62FE;
+.Header li :hover {
+  color: #0f62fe;
 }
 
 /* Footer */
 
-.Footer{
+.Footer {
   padding: 10px 5vw;
-  background-color: #CED7E4;
+  background-color: #ced7e4;
 }
 
 /* Job Details */
-.page-header{
-  background-color: #CED7E4;
+.page-header {
+  background-color: #ced7e4;
   height: 20vh;
   font-size: xx-large;
   font-weight: bolder;
   text-align: left;
-  padding: 4rem ;
+  padding: 4rem;
 }
 
 .page-header p {
@@ -79,15 +79,19 @@
   font-size: medium;
   font-weight: inherit;
   border: none;
-  border-radius: 4px; 
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.job-card{
+.job-card {
   padding: 20px;
 }
 
-.job-card{
+.job-card img {
+  width: 50px;
+}
+
+.job-card {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -98,51 +102,72 @@
   padding: 30px;
 }
 
-.button{
-  background-color: #0F62FE;
-  padding: 10px 20px;
+.button,
+.button2.active {
+  background-color: #0f62fe;
+  padding: 0.5rem 1rem;
   color: #ffffff !important;
   border: none;
-  border-radius: 4px; 
+  border-radius: 4px;
+  border: 1px solid #0f62fe;
   cursor: pointer;
 }
 
-.button:hover{
-  background-color: #0c4bc1;
+.button2 {
+  background-color: #0f63fe50;
+  padding: 10px 20px;
+  width: 25vw;
+  color: #0f62fe !important;
+  font-weight: bold;
+  border: 1px solid #0f62fe;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.details-content-left{
+.register-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button:hover,
+.button2:hover {
+  background-color: #0c4bc1;
+  color: white !important;
+}
+
+.details-content-left {
   width: 70vw;
   text-align: left;
   padding: 3rem;
   line-height: 2rem;
 }
 
-.details-content-right{
+.details-content-right {
   width: 30vw;
   text-align: left;
   padding: 3rem;
   line-height: 2rem;
 }
 
-.details-content-right-bubble{
+.details-content-right-bubble {
   background-color: rgba(211, 211, 211, 0.452);
   border-radius: 1rem;
   padding: 1rem;
   margin-top: 2rem;
 }
 
-.full-width{
+.full-width {
   width: 100%;
 }
 
-.details-container{
-display: flex;
+.details-container {
+  display: flex;
 }
 
 /* Footer */
-.Footer{
-  position: fixed; 
+.Footer {
+  position: fixed;
   width: 100%;
   bottom: 0;
   font-size: larger;
@@ -150,23 +175,41 @@ display: flex;
 }
 
 /* Form */
-.form-container{
+.form-container {
   border: 1px solid lightgrey;
   margin: 3rem;
   text-align: left;
   padding: 3rem;
 }
 
-.form-container input, select{
- display: flex;
- color: black;
- border: 1px solid lightgrey;
- width: 40vw; 
- height: 2rem;
- font-size: large;
- border-radius: 0.3rem;
- width: 100%;
- margin-bottom:.5rem;
+.register-container {
+  border: 1px solid lightgrey;
+  margin: 3rem 20vw;
+  text-align: left;
+  padding: 3rem;
+}
+
+.form-container input,
+select,
+.register-container input,
+select {
+  display: flex;
+  color: black;
+  border: 1px solid lightgrey;
+  width: 40vw;
+  height: 2rem;
+  font-size: large;
+  border-radius: 0.3rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.form-container textarea{
+  width: 100%;
+  min-height: 150px;
+  border: 1px solid lightgrey;
+  font-size: 1rem;
+  resize: vertical;
 }
 
 /* .form-container input:nth-of-type(1),
@@ -174,7 +217,3 @@ display: flex;
 .form-container input:nth-of-type(6){
   width: 100%;
 } */
-
-.form-container input:nth-of-type(6){
-  height: 15rem;
-}

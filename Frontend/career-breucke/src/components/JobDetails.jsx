@@ -30,22 +30,22 @@ function JobDetails() {
         </div>
         <div className="details-content-right">
           <div className="details-content-right-bubble">
-          <h2>Job Overview</h2>
-          <br></br>
-          <p>Date Posted:</p>
-          <p>{job.postedDate}</p>
-          <br></br>
-          <p>Location:</p>
-          <p>{job.Location}</p>
+            <h2>Job Overview</h2>
+            <br></br>
+            <p>Date Posted:</p>
+            <p>{new Date(job.postedDate).toDateString()}</p>
+            <br></br>
+            <p>Location:</p>
+            <p>{job.Location}</p>
           </div>
           <div className="details-content-right-bubble">
-          <h2>Company Overview</h2>
-          <br></br>
-          <p>Sector:</p>
-          <p>{job.postedDate}</p>
-          <br></br>
-          <p>Type:</p>
-          <p>{job.Location}</p>
+            <h2>Company Overview</h2>
+            <br></br>
+            <p>Sector:</p>
+            <p>Technology</p>
+            <br></br>
+            <p>Type:</p>
+            <p>FinTech Startup</p>
           </div>
           <br />
           <button className="button full-width">Apply Now!</button>

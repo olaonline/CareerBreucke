@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const JobModel = require("../models/jobModel");
 const JobController = require("../controllers/JobController");
 
 router.get('/', JobController.job_index)

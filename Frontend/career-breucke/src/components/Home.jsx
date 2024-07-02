@@ -1,9 +1,9 @@
-import '../App.css';
+import "../App.css";
 
 function Homepage() {
   return (
     <h1>
-    <div className='page-header'>Homepage</div>
+      <div className="page-header">Homepage</div>
     </h1>
   );
 }
